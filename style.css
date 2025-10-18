@@ -127,9 +127,7 @@ img{
   font-size: 16px;
 }
 
-/* Purchase Section */
-
-
+/* Popup 1 Section */
 .popup{
   pointer-events: none;
   opacity: 0;
@@ -182,6 +180,7 @@ img{
   box-shadow: 0px 0px 10px rbga(255, 122, 0, 0.5);
 }
 
+/* Popup 2 Section */
 .popup2{
   opacity: 0;
   pointer-events: none;
@@ -216,6 +215,59 @@ img{
   background: rgb(255, 255, 255, 0.5)
 }
 
+/* Popup 3 Section */
+.popup3{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.popup3:target{
+ opacity: 1;
+ pointer-events: all;
+}
+
+.popup-inner-3{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  background-color: rgb(255, 255, 255, 0.8);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#copy-btn{
+  padding: 8px 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--black);
+  background: linear-gradient(135deg, var(--darker-orange), var(--lighter-orange));
+}
+
+#copy-btn:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rbga(255, 122, 0, 0.5);
+}
+
+/* Bitcoin Background Image Section */
 
 .bitcoin{
   position: absolute;
@@ -223,6 +275,29 @@ img{
 
 .bitcoin img{
   width: 120px;
+}
+
+/* Alert Section */
+
+.copy-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, var(--darker-orange), var(--lighter-orange));
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+
+}
+.copy-alert.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Media Query 600px */

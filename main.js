@@ -57,3 +57,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Alert Section
+
+function copyBTC() {
+  const btcAddress = document.getElementById("btcAddress");
+  navigator.clipboard.writeText(btcAddress.textContent).then(() => {
+    const alertBox = document.getElementById("copy-alert");
+    alertBox.classList.add("show");
+
+    setTimeout(() => {
+      alertBox.classList.remove("show");
+    }, 2000); // disappears after 2 seconds
+  });
+}
+
