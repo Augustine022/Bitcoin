@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Bitcoin Transaction</title>
 </head>
 <body>
   <div class="container">
@@ -23,16 +23,16 @@
       <section class="purchase-section">
         <p class="click">Click here to purchase Bitcoin</p>
         <div class="btn-flex">
-           <a href="https://www.coinbase.com" target="_blank" rel="noopener noreferrer" class="btn">Buy on Coinbase</a>
+           <a href="https://www.coinbase.com"  onclick="openApp('coinbase://', 'https://www.coinbase.com/')" target="_blank" rel="noopener noreferrer" class="btn">Buy on Coinbase</a>
            <a href="#popup1" class="btn-second">Buy on other platforms</a>
         </div>
         <div class="popup" id="popup1">
           <div class="popup-inner">
              <ul class="platform-li-grid">
-               <li><a href="https://www.binance.com" target="_blank" rel="noopener noreferrer" class="more-btn">Binance</a></li>
-               <li><a href="https://www.exodus.com" target="_blank" rel="noopener noreferrer" class="more-btn">Exodus</a></li>
-               <li><a href="https://bitpay.com" target="_blank" rel="noopener noreferrer" class="more-btn">Bitpay</a></li>
-               <li><a href="https://www.kraken.com" target="_blank" rel="noopener noreferrer" class="more-btn">Kraken</a></li>
+               <li><a href="https://www.binance.com" onclick="openApp('binance://', 'https://www.binance.com/')" target="_blank" rel="noopener noreferrer" class="more-btn">Binance</a></li>
+               <li><a href="https://www.exodus.com" onclick="openApp('exodus://', 'https://www.exodus.com/')"  target="_blank" rel="noopener noreferrer" class="more-btn">Exodus</a></li>
+               <li><a href="https://bitpay.com" onclick="openApp('bitpay://', 'https://bitpay.com/')" target="_blank" rel="noopener noreferrer" class="more-btn">Bitpay</a></li>
+               <li><a href="https://www.kraken.com" onclick="openApp('bitpay://', 'https://bitpay.com/')" target="_blank" rel="noopener noreferrer" class="more-btn">Kraken</a></li>
              </ul>
           </div>
         </div>

@@ -1,4 +1,17 @@
 // main.js
+
+// Direct to App or Website Section
+  function openApp(appLink, webLink) {
+    // Try to open the app
+    window.location.href = appLink;
+
+    // Wait 800ms and redirect to the web if the app isn't installed
+    setTimeout(() => {
+      window.location.href = webLink;
+    }, 800);
+  }
+
+  // Popup Section
 document.addEventListener("DOMContentLoaded", () => {
   // Get both popups and their triggers
   const popup1 = document.getElementById("popup1");
