@@ -54,7 +54,7 @@ img{
 
 .main{
   background-color: rgb(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   padding: 20px;
   margin: 15px;
   border-radius: 12px;
@@ -249,13 +249,13 @@ img{
 
 @media (min-width:900px) {
   h1{
-    font-size: 32px;
+    font-size: 30px;
   }
   p{
     font-size: 18px;
   }
   .tips{
-    max-width: 550px;
+    max-width: 600px;
   }
   .btn-flex{
     flex-direction: row;
@@ -276,13 +276,13 @@ img{
 
 @media (min-width:1200px) {
   h1{
-    font-size: 36px;
+    font-size: 34px;
   }
   p{
-    font-size: 22px;
+    font-size: 20px;
   }
   .tips{
-    max-width: 600px;
+    max-width: 650px;
   }
   .btn-flex{
     flex-direction: row;
