@@ -53,7 +53,7 @@ img{
 }
 
 .main{
-  background-color: rgb(255, 255, 255, 0.15);
+  background: rgb(255, 255, 255, 0.15);
   backdrop-filter: blur(3px);
   padding: 20px;
   margin: 15px;
@@ -119,8 +119,13 @@ img{
 
 /* Header Section */
 
-.header-section p{
+.header-section{
   text-align: center;
+}
+
+.header-section h1{
+  color: var(--darker-orange);
+  margin-bottom: 6px;
 }
 
 .header-section span{
@@ -232,6 +237,7 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5px;
   padding: 12px;
   border-radius: 12px;
 }
@@ -309,6 +315,9 @@ img{
   p{
     font-size: 16px;
   }
+   .header-section p{
+   font-size: 15px;
+  }
   .click{
     font-size: 13px;
   }
@@ -328,6 +337,9 @@ img{
   }
   p{
     font-size: 18px;
+  }
+  .header-section p{
+   font-size: 18px;
   }
   .tips{
     max-width: 600px;
@@ -355,6 +367,9 @@ img{
   }
   p{
     font-size: 20px;
+  }
+  .header-section p{
+   font-size: 20px;
   }
   .tips{
     max-width: 650px;
